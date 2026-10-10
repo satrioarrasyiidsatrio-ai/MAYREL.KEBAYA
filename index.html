@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAYREL | Kebaya & Batik</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#beranda">
+      <span class="brand-icon">❋</span>
+      <span><strong>MAYREL</strong><small>Kebaya &amp; Batik</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">☰</button>
+    <nav id="mainNav">
+      <a href="#beranda">Beranda</a>
+      <a href="#kategori">Kategori</a>
+      <a href="#produk">Katalog</a>
+      <a href="#tentang">Tentang Kami</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+    <button class="cart-button" id="openCart">🛒 Keranjang <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div class="hero-copy">
+        <p class="eyebrow">Tampil anggun di setiap momen</p>
+        <h1>MAYREL</h1>
+        <h2>Kebaya &amp; Batik</h2>
+        <p class="hero-description">Koleksi kebaya dan batik pilihan dengan sentuhan modern dan tradisional untuk setiap langkah berharga Anda.</p>
+        <a class="button button-primary" href="#produk">Belanja Sekarang <span>→</span></a>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1000&q=85" alt="Inspirasi busana tradisional">
+        <div class="visual-label">Elegansi dalam tradisi</div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="kategori">
+      <div class="section-heading">
+        <div><p class="eyebrow">Temukan gayamu</p><h2>Kategori Pilihan</h2><p>Pilih koleksi favoritmu.</p></div>
+      </div>
+      <div class="category-grid">
+        <button class="category-card" data-filter="kebaya">
+          <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80" alt="Kebaya">
+          <span><strong>Kebaya</strong><b>↗</b></span>
+        </button>
+        <button class="category-card" data-filter="batik">
+          <img src="https://images.unsplash.com/photo-1590736969955-71cc94901144?auto=format&fit=crop&w=600&q=80" alt="Batik">
+          <span><strong>Batik</strong><b>↗</b></span>
+        </button>
+        <button class="category-card" data-filter="couple">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=80" alt="Set couple">
+          <span><strong>Set Couple</strong><b>↗</b></span>
+        </button>
+        <button class="category-card" data-filter="aksesori">
+          <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=600&q=80" alt="Aksesori">
+          <span><strong>Aksesori</strong><b>↗</b></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="section wrap" id="produk">
+      <div class="section-heading heading-row">
+        <div><p class="eyebrow">Pilihan spesial untukmu</p><h2>Produk Pilihan</h2><p>Koleksi untuk penampilan terbaikmu.</p></div>
+        <button class="text-button" id="showAll">Lihat Semua →</button>
+      </div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-category="kebaya" data-id="kebaya-encim" data-name="Kebaya Encim Modern" data-price="450000">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=80" alt="Kebaya Encim Modern"></div>
+          <div class="product-info"><p class="product-tag">KEBAYA</p><h3>Kebaya Encim Modern</h3><p class="product-desc">Elegan untuk acara istimewa.</p><div class="product-bottom"><strong>Rp450.000</strong><button class="add-button">+ Keranjang</button></div></div>
+        </article>
+        <article class="product-card" data-category="batik" data-id="batik-parang" data-name="Batik Parang Klasik" data-price="250000">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1590736969955-71cc94901144?auto=format&fit=crop&w=700&q=80" alt="Batik Parang Klasik"></div>
+          <div class="product-info"><p class="product-tag">BATIK</p><h3>Batik Parang Klasik</h3><p class="product-desc">Motif tradisional yang berkelas.</p><div class="product-bottom"><strong>Rp250.000</strong><button class="add-button">+ Keranjang</button></div></div>
+        </article>
+        <article class="product-card" data-category="kebaya" data-id="kebaya-brokat" data-name="Kebaya Brokat Premium" data-price="520000">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1583391733958-d2c2d8e4d0a5?auto=format&fit=crop&w=700&q=80" alt="Kebaya Brokat Premium"></div>
+          <div class="product-info"><p class="product-tag">KEBAYA</p><h3>Kebaya Brokat Premium</h3><p class="product-desc">Detail cantik dan nyaman dipakai.</p><div class="product-bottom"><strong>Rp520.000</strong><button class="add-button">+ Keranjang</button></div></div>
+        </article>
+        <article class="product-card" data-category="batik" data-id="batik-tulis" data-name="Batik Tulis Nusantara" data-price="300000">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&w=700&q=80" alt="Batik Tulis Nusantara"></div>
+          <div class="product-info"><p class="product-tag">BATIK</p><h3>Batik Tulis Nusantara</h3><p class="product-desc">Corak klasik yang istimewa.</p><div class="product-bottom"><strong>Rp300.000</strong><button class="add-button">+ Keranjang</button></div></div>
+        </article>
+        <article class="product-card" data-category="couple" data-id="batik-couple" data-name="Set Batik Couple" data-price="650000">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=700&q=80" alt="Set Batik Couple"></div>
+          <div class="product-info"><p class="product-tag">COUPLE</p><h3>Set Batik Couple</h3><p class="product-desc">Serasi untuk momen spesial.</p><div class="product-bottom"><strong>Rp650.000</strong><button class="add-button">+ Keranjang</button></div></div>
+        </article>
+        <article class="product-card" data-category="aksesori" data-id="aksesori-etnik" data-name="Aksesori Etnik" data-price="95000">
+          <div class="product-image"><img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=700&q=80" alt="Aksesori Etnik"></div>
+          <div class="product-info"><p class="product-tag">AKSESORI</p><h3>Aksesori Etnik</h3><p class="product-desc">Pelengkap gaya yang menawan.</p><div class="product-bottom"><strong>Rp95.000</strong><button class="add-button">+ Keranjang</button></div></div>
+        </article>
+      </div>
+      <p class="no-results" id="noResults" hidden>Produk dalam kategori ini belum tersedia.</p>
+    </section>
+
+    <section class="wrap">
+      <div class="promo">
+        <div><p>Tradisi dalam balutan</p><h2>Modernitas</h2><a class="button button-primary" href="#produk">Jelajahi Koleksi →</a></div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="tentang">
+      <div class="section-heading"><p class="eyebrow">Alasan memilih kami</p><h2>Mengapa MAYREL?</h2></div>
+      <div class="benefit-grid">
+        <div class="benefit"><span>✧</span><h3>Produk Berkualitas</h3><p>Bahan pilihan dan detail yang diperhatikan.</p></div>
+        <div class="benefit"><span>♧</span><h3>Pengiriman Praktis</h3><p>Pesanan disiapkan dengan cermat.</p></div>
+        <div class="benefit"><span>◇</span><h3>Pesanan Mudah</h3><p>Pilih produk dan lanjutkan melalui WhatsApp.</p></div>
+        <div class="benefit"><span>♡</span><h3>Layanan Ramah</h3><p>Kami siap membantu pilihan busanamu.</p></div>
+      </div>
+      <div class="about-copy"><h2>Tentang MAYREL</h2><p>MAYREL menghadirkan pilihan kebaya dan batik yang merayakan keindahan budaya Indonesia. Kami memadukan pesona tradisi dengan gaya modern untuk berbagai momen istimewa Kontak Kami </p></div>
+      
+       📸 Instagram: @mayrel.kebaya
+       💬 WhatsApp: 085194720779 Hubungi kami untuk pemesanan!.</p></div>
+    </section>
+  </main>
+
+  <footer id="kontak">
+    <div class="footer-inner wrap">
+      <a class="brand" href="#beranda"><span class="brand-icon">❋</span><span><strong>MAYREL</strong><small>Kebaya &amp; Batik</small></span></a>
+      <div class="footer-links"><a href="#beranda">Beranda</a><a href="#produk">Katalog</a><a href="#tentang">Tentang Kami</a><a href="mailto:halo@mayrel.example">Email</a></div>
+      <p class="copyright">© 2026 MAYREL Kebaya &amp; Batik.</p>
+    </div>
+  </footer>
+
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+  <aside class="cart-panel" id="cartPanel" aria-label="Keranjang belanja">
+    <div class="cart-header"><h2>Keranjang Belanja</h2><button id="closeCart" aria-label="Tutup keranjang">✕</button></div>
+    <div class="cart-items" id="cartItems"><p class="cart-empty">Keranjang kamu masih kosong.</p></div>
+    <div class="cart-footer"><div class="cart-total"><span>Total</span><strong id="cartTotal">Rp0</strong></div><button class="button button-primary checkout-button" id="checkoutButton">Checkout via WhatsApp</button><p class="checkout-note">Pastikan nomor WhatsApp toko sudah diatur di file script.js.</p></div>
+  </aside>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
